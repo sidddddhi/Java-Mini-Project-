@@ -2,11 +2,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
-// ============================================================
 // MODULE 1 - ADMIN MANAGEMENT
-// ============================================================
-
 class Admin {
 
     private String username;
@@ -37,12 +33,7 @@ class Admin {
         return false;
     }
 }
-
-
-// ============================================================
 // MODULE 2 - VEHICLE MANAGEMENT
-// ============================================================
-
 abstract class Vehicle {
 
     private String vehicleNumber;
@@ -74,12 +65,7 @@ abstract class Vehicle {
         System.out.println("Vehicle Type   : " + getVehicleType());
     }
 }
-
-
-// ============================================================
 // CAR
-// ============================================================
-
 class Car extends Vehicle {
 
     public Car(String vehicleNumber, String ownerName) {
@@ -91,12 +77,7 @@ class Car extends Vehicle {
         return "Car";
     }
 }
-
-
-// ============================================================
 // BIKE
-// ============================================================
-
 class Bike extends Vehicle {
 
     public Bike(String vehicleNumber, String ownerName) {
@@ -108,12 +89,7 @@ class Bike extends Vehicle {
         return "Bike";
     }
 }
-
-
-// ============================================================
 // BUS
-// ============================================================
-
 class Bus extends Vehicle {
 
     public Bus(String vehicleNumber, String ownerName) {
@@ -125,12 +101,7 @@ class Bus extends Vehicle {
         return "Bus";
     }
 }
-
-
-// ============================================================
 // TRUCK
-// ============================================================
-
 class Truck extends Vehicle {
 
     public Truck(String vehicleNumber, String ownerName) {
@@ -142,33 +113,18 @@ class Truck extends Vehicle {
         return "Truck";
     }
 }
-
-
-// ============================================================
 // VEHICLE MANAGER
-// ============================================================
-
 class VehicleManager {
 
     private HashMap<String, Vehicle> vehicles =
             new HashMap<>();
 
     private final String FILE_NAME = "vehicles.txt";
-
-
-    // --------------------------------------------------------
     // Constructor
-    // --------------------------------------------------------
-
     public VehicleManager() {
         loadVehicles();
     }
-
-
-    // --------------------------------------------------------
     // REGISTER VEHICLE
-    // --------------------------------------------------------
-
     public void registerVehicle(Scanner scanner) {
 
         System.out.println("\n======================================");
@@ -252,12 +208,7 @@ class VehicleManager {
                 "\nVehicle registered successfully!"
         );
     }
-
-
-    // --------------------------------------------------------
     // SEARCH VEHICLE
-    // --------------------------------------------------------
-
     public void searchVehicle(Scanner scanner) {
 
         System.out.println("\n======================================");
@@ -285,12 +236,7 @@ class VehicleManager {
 
         System.out.println("--------------------------------------");
     }
-
-
-    // --------------------------------------------------------
     // UPDATE VEHICLE
-    // --------------------------------------------------------
-
     public void updateVehicle(Scanner scanner) {
 
         System.out.println("\n======================================");
@@ -337,12 +283,7 @@ class VehicleManager {
                 "\nVehicle updated successfully!"
         );
     }
-
-
-    // --------------------------------------------------------
     // REMOVE VEHICLE
-    // --------------------------------------------------------
-
     public void removeVehicle(Scanner scanner) {
 
         System.out.println("\n======================================");
@@ -368,12 +309,7 @@ class VehicleManager {
                 "\nVehicle removed successfully!"
         );
     }
-
-
-    // --------------------------------------------------------
-    // VIEW ALL VEHICLES
-    // --------------------------------------------------------
-
+    // VIEW ALL VEHICLE
     public void viewAllVehicles() {
 
         System.out.println("\n======================================");
@@ -407,12 +343,7 @@ class VehicleManager {
                 "Total Vehicles: " + vehicles.size()
         );
     }
-
-
-    // --------------------------------------------------------
     // SAVE VEHICLES
-    // --------------------------------------------------------
-
     private void saveVehicles() {
 
         try {
@@ -441,12 +372,7 @@ class VehicleManager {
             );
         }
     }
-
-
-    // --------------------------------------------------------
     // LOAD VEHICLES
-    // --------------------------------------------------------
-
     private void loadVehicles() {
 
         File file = new File(FILE_NAME);
@@ -541,12 +467,7 @@ class VehicleManager {
         }
     }
 }
-
-
-// ============================================================
 // MAIN SYSTEM
-// ============================================================
-
 public class Main {
 
     static Scanner scanner =
@@ -556,12 +477,7 @@ public class Main {
 
     static VehicleManager vehicleManager =
             new VehicleManager();
-
-
-    // ========================================================
     // MAIN METHOD
-    // ========================================================
-
     public static void main(String[] args) {
 
         System.out.println(
@@ -610,12 +526,7 @@ public class Main {
 
         scanner.close();
     }
-
-
-    // ========================================================
     // CREATE ADMIN ACCOUNT
-    // ========================================================
-
     public static void createAdminAccount() {
 
         System.out.println(
@@ -684,12 +595,7 @@ public class Main {
             break;
         }
     }
-
-
-    // ========================================================
     // LOGIN
-    // ========================================================
-
     public static boolean login() {
 
         System.out.println(
@@ -727,12 +633,7 @@ public class Main {
 
         return false;
     }
-
-
-    // ========================================================
     // ADMIN DASHBOARD
-    // ========================================================
-
     public static void adminDashboard() {
 
         boolean loggedIn = true;
@@ -807,12 +708,7 @@ public class Main {
             }
         }
     }
-
-
-    // ========================================================
     // CHANGE PASSWORD
-    // ========================================================
-
     public static void changePassword() {
 
         System.out.println(
@@ -864,12 +760,7 @@ public class Main {
             );
         }
     }
-
-
-    // ========================================================
     // VEHICLE MANAGEMENT
-    // ========================================================
-
     public static void vehicleManagement() {
 
         boolean running = true;
