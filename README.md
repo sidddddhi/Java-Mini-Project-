@@ -1,2 +1,2 @@
 # Java-Mini-Project-
-Smart Traffic Management System
+Smart Vehicle Parking System
