@@ -17,57 +17,57 @@ Module 2 – Vehicle Management
 *Remove vehicle
 *View all vehicles
 
+Module 3 – Admin Management
+* Create Admin Account
+* Login
+* Change Password
+* Logout
+
 Module 3 – Parking Slot Management
-
-1. Park Vehicle
-2. Remove Vehicle
-3. Display Parking Slots
-4. Check Available Slots
-5. Exit
-
+* Park Vehicle
+* Remove Vehicle
+* Display Parking Slots
+* Check Available Slots
+* Exit
 
 Module 4 – Parking Operations
-
-1. Vehicle Entry
-2. Vehicle Exit
-3. Display Parking Status
-4. Check Available Slots
-5. Exit
-
+* Vehicle Entry
+* Vehicle Exit
+* Display Parking Status
+* Check Available Slots
+* Exit
 
 Module 5 – Billing and Payment System
-
-1. Generate Bill
-2. Exit
-
+* Generate Bill
+* Exit
 
 Module 6 – Reservation Management
-
-1. Add Reservation
-2. View Reservations
-3. Search Reservation
-4. Update Reservation
-5. Cancel Reservation
-6. Exit
-
+* Add Reservation
+* View Reservations
+* Search Reservation
+* Update Reservation
+* Cancel Reservation
+* Exit
 
 Module 7 – Report Management
-
-1. Add Report
-2. View Reports
-3. Search Report
-4. Delete Report
-5. Exit
-
+* Add Report
+* View Reports
+* Search Report
+* Delete Report
+* Exit
 
 Module 8 – Data Management
+* Add Data
+* View Data
+* Search Data
+* Update Data
+* Delete Data
+* Exit
 
-1. Add Data
-2. View Data
-3. Search Data
-4. Update Data
-5. Delete Data
-6. Exit
+
+
+
+
 
 VS Code
 *OOP Concepts
